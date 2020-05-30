@@ -4,15 +4,19 @@
 # /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg with the following:
 # network: {config: disabled}
 network:
+        #renderer: NetworkManager
+        renderer: networkd
         wifis:
                 wlan0:
                         dhcp4: no
                         dhcp6: no
+                        mtu: 1500
                         access-points:
                                 "call-code-mesh":
-                                        band: 2.4GHz
-                                        channel: 1
+                                        #band: 2.4GHz
+                                        channel: 3
                                         mode: adhoc
+                                        bssid: 02:12:34:56:78:9A
                                         #ESSID: call-code-mesh
         version: 2
 
