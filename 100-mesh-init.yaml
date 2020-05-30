@@ -13,8 +13,8 @@ network:
                         mtu: 1500
                         access-points:
                                 "call-code-mesh":
-                                        #band: 2.4GHz
-                                        channel: 3
+                                        band: 2.4GHz
+                                        channel: 4
                                         mode: adhoc
                                         bssid: 02:12:34:56:78:9A
                                         #ESSID: call-code-mesh

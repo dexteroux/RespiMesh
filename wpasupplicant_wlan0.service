@@ -1,0 +1,16 @@
+[Unit]
+Description=WPA supplicant for netplan wlan0
+DefaultDependencies=no
+Requires=sys-subsystem-net-devices-wlan0.device
+After=sys-subsystem-net-devices-wlan0.device
+Before=network.target
+Wants=network.target
+
+[Service]
+Type=simple
+ExecStart=/sbin/wpa_supplicant -c /etc/scripts/wpa-wlan0.conf -iwlan0 -Dwext
+
+[Install]
+WantedBy=default.target
+
+

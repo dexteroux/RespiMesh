@@ -21,3 +21,4 @@ sudo batctl gw_mode client
 #sudo ifconfig bat0 up
 sudo ip link set dev wlan0 up
 sudo ip link set dev bat0 up
+sudo ip addr add 172.27.0.1/16 dev bat0
