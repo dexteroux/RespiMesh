@@ -8,7 +8,8 @@ Wants=network.target
 
 [Service]
 Type=simple
-ExecStart=/sbin/wpa_supplicant -c /etc/scripts/wpa-wlan0.conf -iwlan0 -Dwext
+ExecStart=/sbin/wpa_supplicant -c /etc/scripts/wpa-wlan0.conf -iwlan0 -Dwext 
+#ExecStart=/sbin/wpa_supplicant -c /etc/scripts/wpa-wlan1.conf -iwlan1 -Dwext 
 
 [Install]
 WantedBy=default.target

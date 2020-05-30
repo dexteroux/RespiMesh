@@ -11,6 +11,8 @@
 sudo mkdir -p /etc/scripts
 sudo cp wpa-wlan0.conf /etc/scripts/wpa-wlan0.conf
 sudo chmod 744 /etc/scripts/wpa-wlan0.conf
+sudo cp wpa-wlan0.conf /etc/scripts/wpa-wlan1.conf
+sudo chmod 744 /etc/scripts/wpa-wlan1.conf
 
 sudo cp start-batman-adv.sh /etc/scripts/start-batman-adv.sh
 sudo chmod 744 /etc/scripts/start-batman-adv.sh
