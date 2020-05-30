@@ -1,0 +1,8 @@
+[Unit]
+After=network.service
+
+[Service]
+ExecStart=/etc/scripts/start-batman-adv.sh
+
+[Install]
+WantedBy=default.target
